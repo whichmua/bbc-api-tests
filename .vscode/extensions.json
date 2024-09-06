@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "alexkrechik.cucumberautocomplete",
+    "JosefBiehler.cypress-fixture-intellisense",
+    "Shelex.vscode-cy-helper",
+    "dbaeumer.vscode-eslint",
+    "siarheikuchuk.gherkin-beautifier-vs-code-plugin",
+    "eg2.vscode-npm-script",
+    "christian-kohler.npm-intellisense",
+    "techer.open-in-browser",
+    "VisualStudioExptTeam.vscodeintellicode"
+  ]
+}

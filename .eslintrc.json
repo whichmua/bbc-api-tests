@@ -1,0 +1,77 @@
+{
+  "overrides": [
+    {
+      "files": ["*.json", "*.json5", "*.jsonc"],
+      "parser": "jsonc-eslint-parser"
+    }
+  ],
+  "rules": {
+    "complexity": "off",
+    "max-len": "off",
+    "max-params": "off",
+    "max-statements": "off",
+    "max-depth": "off",
+    "max-nested-callbacks": "off",
+    "indent": [2, 2],
+    "linebreak-style": [2, "unix"],
+    "space-before-function-paren": [2, "always"],
+    "curly": [2, "all"],
+    "brace-style": [2, "1tbs"],
+    "quotes": [1, "single", "avoid-escape"],
+    "eqeqeq": [2, "allow-null"],
+    "semi": [2, "always"],
+    "new-cap": 0,
+    "no-console": "off",
+    "no-empty": 0,
+    "no-unused-vars": 1,
+    "space-before-blocks": [2, "always"],
+    "keyword-spacing": [
+      2,
+      {
+        "before": true,
+        "after": true,
+        "overrides": {}
+      }
+    ],
+    "no-trailing-spaces": [
+      2, {
+        "skipBlankLines": false
+      }
+    ],
+    "cypress/no-unnecessary-waiting": "off",
+    "eol-last": ["error", "never"],
+    "jsonc/array-bracket-newline": [
+      "error",
+      {
+        "multiline": true,
+        "minItems": null
+      }
+    ],
+    "jsonc/object-property-newline": [
+      "error", {
+        "allowAllPropertiesOnSameLine": false
+      }
+    ],
+    "jsonc/object-curly-newline": [
+      "error",
+      {
+        "multiline": true,
+        "minProperties": 1
+      }
+    ],
+    "jsonc/array-bracket-spacing": ["error", "never"],
+    "jsonc/array-element-newline": ["error", "consistent"],
+    "jsonc/object-curly-spacing": 2,
+    "jsonc/indent": ["error", 2, {}]
+  },
+
+  "env": {
+    "node": true
+  },
+
+  "extends": [
+    "eslint:recommended",
+    "plugin:cypress/recommended",
+    "plugin:jsonc/recommended-with-json"
+  ]
+}

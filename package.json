@@ -1,0 +1,24 @@
+{
+  "name": "bbc-api-tests",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "cypress:test": "cypress open --e2e --browser=chrome --env 'TAGS=not @ignore'",
+    "cypress:all": "cypress run --e2e --browser=chrome --headless --env 'TAGS=not @ignore'"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
+    "@cucumber/cucumber": "^11.0.0",
+    "cypress": "^13.14.2",
+    "eslint": "^9.9.1",
+    "eslint-plugin-cypress": "^3.5.0",
+    "eslint-plugin-jsonc": "^2.16.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/integration/steps/*.js",
+    "filterSpec": true,
+    "omitFiltered": true
+  }
+}
