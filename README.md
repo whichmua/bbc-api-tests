@@ -1,4 +1,4 @@
-# cypress-template
+# bbc-api-tests
 
 ## Installation
 
